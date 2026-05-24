@@ -7,7 +7,7 @@ A production-style data warehouse built from scratch using **PostgreSQL**, integ
 ## Architecture
 
 The warehouse follows **Medallion Architecture** — three progressive layers, each serving a distinct purpose:
-!(Docs/architecture.png)
+![Architecture Diagram](Docs/architecture.png)
 ```
 CRM CSVs  ──┐
              ├──▶  Bronze (raw)  ──▶  Silver (clean)  ──▶  Gold (analytics)  ──▶  BI / Reports
